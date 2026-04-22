@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="fastapi" />
+          <option value="uvicorn" />
+          <option value="sqlalchemy" />
+          <option value="pydantic" />
+          <option value="pydantic-settings" />
+          <option value="redis" />
+          <option value="python-dotenv" />
+          <option value="pymilvus" />
+          <option value="minio" />
+          <option value="celery" />
+          <option value="langchain" />
+          <option value="langgraph" />
+          <option value="openai" />
+          <option value="numpy" />
+          <option value="pandas" />
+          <option value="pytorch" />
+          <option value="transformers" />
+          <option value="peft" />
+          <option value="sentence-transformers" />
+          <option value="pdfplumber" />
+          <option value="python-docx" />
+          <option value="openpyxl" />
+          <option value="Pillow" />
+          <option value="pytesseract" />
+          <option value="faiss-cpu" />
+          <option value="mysql-connector-python" />
+          <option value="jwt" />
+          <option value="passlib" />
+          <option value="python-multipart" />
+          <option value="opentelemetry-api" />
+          <option value="opentelemetry-sdk" />
+          <option value="opentelemetry-exporter-jaeger" />
+          <option value="pika" />
+          <option value="nacos-sdk-python" />
+          <option value="grpcio" />
+          <option value="grpcio-tools" />
+          <option value="trl" />
+          <option value="unstructured" />
+          <option value="pyPDF2" />
+          <option value="tiktoken" />
+          <option value="colbert-ir" />
+          <option value="gptq" />
+          <option value="awq" />
+          <option value="tensorrt" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
