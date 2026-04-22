@@ -1,0 +1,33 @@
+# 依赖包
+
+# Web框架
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# 数据处理
+numpy==1.26.2
+pandas==2.1.4
+
+# 机器学习
+torch==2.1.2
+
+# 向量数据库
+pymilvus==2.3.4
+
+# 文件处理
+python-magic==0.4.27
+python-docx==0.8.11
+PyPDF2==3.0.1
+
+# 工具库
+psutil==5.9.6
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# 类型提示
+mypy==1.8.0
+
+# 开发工具
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0

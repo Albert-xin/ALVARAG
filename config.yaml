@@ -1,0 +1,46 @@
+# 全局配置
+
+# 向量数据库配置
+milvus:
+  host: localhost
+  port: 19530
+  user: root
+  password: milvus
+  database: default
+  collection: document_vectors
+
+# 设备配置
+device: auto
+
+# 文件处理配置
+file_threshold_gb: 1.0
+
+# 分块配置
+chunk_size: 512
+overlap: 128
+
+# 批处理配置
+batch_size: 32
+max_concurrency: 4
+
+# 超时配置
+timeout_seconds: 300
+
+# 模型路径配置
+model_paths:
+  embedding: models/embedding
+  rerank: models/rerank
+  llm: models/llm
+
+# 模型配置
+embedding:
+  precision: fp16
+  max_length: 512
+
+rerank:
+  precision: fp16
+  max_length: 512
+
+llm:
+  precision: fp16
+  max_length: 4096
