@@ -1,5 +1,23 @@
 # 全局配置
 
+# 日志配置
+logging:
+  level: INFO
+  format: "%(asctime)s - %(levelname)s - %(trace_id)s - %(module)s - %(message)s"
+  json_format: false
+  log_dir: logs
+  rotation:
+    enabled: true
+    when: H
+    interval: 1
+    backup_count: 7
+    max_size: 10485760  # 10MB in bytes
+  environments:
+    development:
+      level: DEBUG
+    production:
+      level: INFO
+
 # 向量数据库配置
 milvus:
   host: localhost
