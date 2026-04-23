@@ -57,6 +57,20 @@ class Settings:
             else:
                 return default
         return value
+    
+    @property
+    def database(self):
+        """数据库配置"""
+        class DatabaseConfig:
+            def __init__(self, config):
+                self.host = config.get('host', 'localhost')
+                self.port = config.get('port', 3306)
+                self.user = config.get('user', 'root')
+                self.password = config.get('password', 'password')
+                self.name = config.get('name', 'alvarag')
+        
+        db_config = self._config.get('database', {})
+        return DatabaseConfig(db_config)
 
 
 # 全局配置实例

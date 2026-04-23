@@ -18,6 +18,14 @@ logging:
     production:
       level: INFO
 
+# 数据库配置
+database:
+  host: localhost
+  port: 3306
+  user: root
+  password: password
+  name: alvarag
+
 # 向量数据库配置
 milvus:
   host: localhost
@@ -49,6 +57,7 @@ model_paths:
   embedding: models/embedding
   rerank: models/rerank
   llm: models/llm
+  intent: models/intent
 
 # 模型配置
 embedding:
@@ -62,3 +71,10 @@ rerank:
 llm:
   precision: fp16
   max_length: 4096
+
+intent:
+  confidence_threshold: 0.7
+  default_intent: "rag_query"
+  max_history_rounds: 5
+  coherence_threshold: 0.3
+  prediction_threshold: 0.7

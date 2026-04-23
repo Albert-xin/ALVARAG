@@ -10,14 +10,19 @@ pandas==2.1.4
 
 # 机器学习
 torch==2.1.2
+transformers==4.35.2
 
 # 向量数据库
 pymilvus==2.3.4
+
+# 数据库
+pymysql==1.0.3
 
 # 文件处理
 python-magic==0.4.27
 python-docx==0.8.11
 PyPDF2==3.0.1
+openpyxl==3.1.2  # 用于Excel文件处理
 
 # 工具库
 psutil==5.9.6
